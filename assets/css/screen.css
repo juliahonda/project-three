@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("//basehold.it/24");
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+html {
+  font-family: Merriweather, "Hoefler Text", Georgia, "Times New Roman", Times, Roman, serif;
+  font-size: 1.125em; /*18 /16 = 1.125*/
+  line-height: 1.333333em; /*24 /18 =1.333333 */
+  padding: 1.333333em; /*24 /18 =1.333333 */
+  background: #f7e6ff;
+}
+
+/*body{
+  margin: 1em; derive from line height
+  padding: 1em;
+  background-color: #ffffff; color: purple; #E6E6FA lighter purple
+}*/
+
+/*nav {
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+.nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #eeccff;
+  color: #000000;
+  padding: 0.6666666666666em; /*12/18 =0.6666666666666666em*/
+}
+.nav a:hover {
+  background: #e6b3ff;
+}
+.nav li {
+  padding-bottom: 0.3333333333333333em; /*6/18 =0.3333333333333333em*/
+}
+
+nav {
+  padding-bottom: 1.333333em; /*24 /18 =1.333333 */
+}
+
+h1 {
+  font-size: 1.44444444em; /* 26/18= 1.44444444 24 /18 =1.333333 22/18=1.2222222222222223em*/
+  padding-bottom: 1.333333em; /*24 /18 =1.333333 */
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.111111111em; /*20/18=1.111111111em*/
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.111111111em; /*20/18=1.111111111em*/
+  font-weight: bold;
+  padding-top: 1.333333em; /*24 /18 =1.333333 */
+}
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.111111111em;
+  padding-top: 0.6666666666666em; /*12/18 =0.6666666666666666em*/
+  padding-bottom: 1.333333em; /*24 /18 =1.333333 */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #000000;
+}
+
+p {
+  padding-bottom: 1.333333em; /*24 /18 =1.333333 */
+}
+
+figure {
+  float: right;
+  padding-left: 1.333333em; /*24 /18 =1.333333 */
+}
+
+figure.portrait {
+  max-width: 25em; /*450/18= 25em 30% of 1500 original width of photo*/
+}
+figure.landscape {
+  max-width: 44.45em; /*800.1/18=44.45 30% of 2667 original width of photo*/
+}
+
+section:nth-of-type(2n) figure {
+  float: left;
+  padding-right: 1.333333em; /*24 /18 =1.333333 */
+}
+
+ul.hobby-list, ul.details-school, ul.res-experience, ul.res-skills {
+  list-style-type: disc;
+  padding-left: 1.333333em; /*24 /18 =1.333333 */
+}
+
+figcaption {
+  font-size: 0.6666666666666em; /*12/18 =0.6666666666666666em*/
+  padding-bottom: 0.6666666666666em; /*12/18 =0.6666666666666666em*/
+}
+
+footer {
+  font-size: 0.6666666666666em; /*12/18 =0.6666666666666666em*/
+  padding-top: 1.333333em; /*24 /18 =1.333333 */
+}
+
+#content {
+  padding: 0 1.3333333333em; /* 24 / 18 = 1.3333333333 */
+}
+
+@media screen and (min-width: 31.875em) { /*510/16=31.875*/
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav li {
+    padding: 0.3333333333333333em; /*6/18 =0.3333333333333333em*/
+    width: 20%;
+  }
+}
+
+/*Do I have to keep adding media queries everytime it gets bigger? */
+/*@media screen and (min-width: 26.875em) { 430/16 =26.875em
+  figure.portrait {
+    width: 50%;
+  }
+} */
+
+@media screen and (min-width: 38.125em) { /* 610/16= 38.125 790/16=49.375em*/
+  figure.portrait {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 84.375em) { /*1350/16=84.375 1400/16=87.5em*/
+  figure.portrait {
+    width: 20%;
+  }
+}
+
+/*@media screen and (min-width: 22.5em) { 360/16= 22.5em
+  figure.landscape {
+    width: 50%;
+  }
+}*/
+
+@media screen and (min-width: 43.75em) { /*700/16=43.75em*/
+  figure.landscape {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 84.375em) { /*1350/16=84.375 1400/16=87.5em*/
+  figure.landscape {
+    width: 30%;
+  }
+}
